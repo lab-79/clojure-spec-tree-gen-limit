@@ -1,8 +1,7 @@
 (ns lab79.clojure-spec-tree-gen-limit
   (:require [clojure.spec :as s]
             [clojure.spec.gen :as gen]
-            [clojure.test.check.generators :refer [generator?]])
-  (:import (com.sun.xml.internal.bind.v2 TODO)))
+            [clojure.test.check.generators :refer [generator?]]))
 
 (s/def ::spec-name keyword?)
 (s/def ::path (s/coll-of ::spec-name :kind vector?))
